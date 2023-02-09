@@ -1,0 +1,12 @@
+.botton{
+    background: #40b48e;
+  border: 2px solid;
+  border-color: #555;
+  position: relative;
+};
+
+.botton:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px #555;
+    transition: all 0.2s ease;
+};

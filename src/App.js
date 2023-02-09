@@ -40,7 +40,9 @@ function App() {
       };
     
       return (
-        <div className="App">
+
+        <div>
+         <div className="App">
           <h1>Food Searching App</h1>
           <form onSubmit={onSubmit} className="search-form">
             {alert !== "" && <Alert alert={alert} />}
@@ -52,12 +54,17 @@ function App() {
               autoComplete="off"
               placeholder="Search Food"
             />
-            <input type="submit" value="Search" />
+            <button className="bottonSearch" onClick={getData}>Search2</button>
+            
           </form>
+
+          </div>
           <div className="recipes">
             {recipes !== [] &&
               recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
           </div>
+        
+
         </div>
       );
     }
